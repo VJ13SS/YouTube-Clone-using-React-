@@ -22,11 +22,11 @@ export default function Feeds(props) {
     const minutes = duration.minutes.toString().padStart(2, '0')
     const seconds = duration.seconds.toString().padStart(2, '0')
 
-    const videoDuration = `${"00"?"":hours + ':'} ${minutes}:${seconds}`
+    const videoDuration = `${hours}: ${minutes}:${seconds}`
     return videoDuration
   }
   const imgStyles = {
-    height: window.innerWidth<=500?'280px':props.displayIcons?'150px':'170px'
+    height: window.innerWidth<=600?'280px':props.displayIcons?'150px':'170px'
   }
   const apiKey = ''//Your Api Key
 
@@ -54,12 +54,12 @@ export default function Feeds(props) {
       <Link to ={`/video/${video.snippet.categoryId}/${video.id}`}
         key = {video.id}
         className = 'video-feed'
-        style = {window.innerWidth<=500?{width:'100%'}:props.displayIcons?{width:'235px'}:{width:'280px'}}
+        style = {window.innerWidth<=600?{width:'100%'}:props.displayIcons?{width:'235px'}:{width:'280px'}}
       >
         
         <img src = {video.snippet.thumbnails.high.url}
 style = {imgStyles} />
-        <p id = "duration" style = {window.innerWidth<=500?{top:'230px'}:props.displayIcons?{top:'130px'}:{top:'150px'}}>{convertIsoDuration(video.contentDetails.duration)}</p>
+        <p id = "duration" style = {window.innerWidth<=600?{top:'230px'}:props.displayIcons?{top:'130px'}:{top:'150px'}}>{convertIsoDuration(video.contentDetails.duration)}</p>
         <h4>{video.snippet.title}</h4>
         <h5>{video.snippet.channelTitle}
         </h5>
