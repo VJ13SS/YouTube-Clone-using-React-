@@ -1,0 +1,51 @@
+.scrollBar{
+  display: flex;
+  flex-direction:column;
+  gap:10px;
+  height:auto;
+  width:20%;
+  padding-top:30px;
+  position: fixed;
+}
+
+.item-container-links{
+  border-bottom:1px solid black;
+  padding:10px;
+  height:400px;
+  display: flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.item-container-subscribed{
+  padding:10px;
+  display: flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.scrollBarItem , .scrollBarItem-subscribed{
+  display: flex;
+  align-items:center;
+  gap:10px;
+  height:35px;
+  padding-left:5px;
+  transition: all 0.5s ease;
+}
+
+.scrollBarItem img ,.scrollBarItem-subscribed img{
+  width:25px;
+  height:25px;
+}
+
+.scrollBarItem-subscribed img{
+  border-radius:50%;
+  
+}
+
+@media (max-width:500px){
+  .scrollBar{
+    display: none;
+    
+  }
+}
