@@ -28,7 +28,7 @@ export default function Feeds(props) {
   const imgStyles = {
     height: window.innerWidth<=500?'280px':props.displayIcons?'150px':'170px'
   }
-  const apiKey = 'AIzaSyA1pBPKgtY1XG1ChcJzPKaJhNmIrzv38NA'
+  const apiKey = ''//Your Api Key
 
   const videoUrl = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&videoCategoryId=${props.category}&key=${apiKey}`
   
