@@ -1,0 +1,22 @@
+import './Components/Navbar/nav.css'
+import './HomePage/Scrollbar/scrollbar.css'
+import './HomePage/homePage.css'
+import './VideoFeeds/feeds.css'
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.app{
+  display: flex;
+  flex-direction:column;
+  gap:10px;
+  width:100%;
+}
