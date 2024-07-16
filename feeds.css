@@ -52,7 +52,7 @@
   gap:4px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .videoFeeds{
     display: flex;
     flex-direction: column;
